@@ -140,4 +140,5 @@ elif menu == "Data Film":
     st.markdown("<div class='section-title'>📂 Data Film</div>", unsafe_allow_html=True)
     df_sorted = df.sort_values(by="title").reset_index(drop=True)
 
-    st.dataframe(df_sorted[["title", "genres", "overview", "keywords"]].head(1000))
+    st.dataframe(df_sorted[["title", "overview", "genres", "keywords"]].head(1000))
+
